@@ -1,4 +1,4 @@
-package com.cydeo.tests.day_02;
+package com.cydeo.tests.day_02_Locators_getText_getAttrbiute;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ Expected: cydeo
        Expected: Practice
 
  */
-public class CydeoPracticeToolVarification {
+public class T1_CydeoPracticeToolVarification {
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
