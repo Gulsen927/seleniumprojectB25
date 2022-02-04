@@ -16,9 +16,21 @@ public class YahooTitleVerifcation {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
+        driver.manage().window().maximize();
+
         driver.get("https://www.yahoo.com");
-        String currentTitle=driver.getTitle();
-        System.out.println("currentTitle = " + currentTitle);
+        String expectedTitle=driver.getTitle();
+        String actualTitle="Yahoo | Mail, Weather, Search, News, Finance, Sports, Shopping, Entertainment, Video";
+
+      if(actualTitle.equals(expectedTitle)){
+          System.out.println("Title is as expected. Verification PASED!");
+      }else{
+          System.out.println("Title is NOT as expected. Verification FAILED!");
+      }
+
+
+
+
 
 
     }
